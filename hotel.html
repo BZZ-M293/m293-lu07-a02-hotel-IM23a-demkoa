@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>Hotelzimmer-Buchungssystem</title>
-
+    <meta charset="UTF-8">
+    <title>Hotelzimmer-Buchungssystem</title>
 </head>
 <body>
-
 <h1>Hotelzimmer-Buchungssystem</h1>
-
-
+<form>
+    <fieldset>
+        <legend>Zimmertypen</legend>
+        <label>Zimmertyp:
+            <select name="roomtype" size="5">
+                <option>Einzelzimmer</option>
+                <option>Zweierzimmer</option>
+                <option>Dreierzimmer</option>
+                <option>Suit</option>
+                <option>Präsidentensuit</option>
+            </select>
+        </label>
+    </fieldset>
+    <fieldset>
+        <legend>Zusatzleistungen</legend>
+        <input type="checkbox" name="extrawork[]" value="frühstück" id="check1">
+        <label for="check1">Frühstück</label>
+        <input type="checkbox" name="extrawork[]" value="flughafentransver" id="check2">
+        <label for="check2">Flughafentransver</label>
+        <input type="checkbox" name="extrawork[]" value="spa-zugang" id="check3">
+        <label for="check3">Spa-Zugang</label>
+    </fieldset>
+</form>
 </body>
 </html>
